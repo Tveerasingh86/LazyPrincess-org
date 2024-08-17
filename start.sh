@@ -9,4 +9,9 @@ fi
 cd /LazyPrincess
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
-python3 bot.py
+
+FROM python:3.10
+WORKDIR /app
+COPY . /app/
+RUN pip3 install -r requirements.txt
+CMD ["python3", "bot.py"]

@@ -34,6 +34,5 @@ lk21
 Flask==2.2.2
 asyncio
 Jinja2==3.0.3
-werkzeug==2.0.2
 itsdangerous==2.0.1
 
